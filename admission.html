@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admission | Iyunga Secondary School</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          IYUNGA
+          <span>SECONDARY SCHOOL</span>
+        </a>
+
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+
+          <li>
+            <a href="academics.html">Academics</a>
+          </li>
+
+          <li>
+            <a href="admission.html" class="active"> Admission </a>
+          </li>
+
+          <li>
+            <a href="news.html">News</a>
+          </li>
+
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+
+    <section class="page-hero">
+      <div>
+        <p>JOIN OUR SCHOOL</p>
+
+        <h1>Admission</h1>
+      </div>
+    </section>
+
+    <!-- ADMISSION INTRODUCTION -->
+
+    <section class="admission-intro">
+      <div class="section-heading">
+        <p class="section-label">ADMISSIONS</p>
+
+        <h2>Welcome to Iyunga Secondary School</h2>
+
+        <p>
+          We welcome students who are interested in joining Iyunga Secondary
+          School. Find information about our admission process, requirements and
+          important guidelines below.
+        </p>
+      </div>
+    </section>
+
+    <!-- ADMISSION PROCESS -->
+
+    <section class="admission-process">
+      <div class="section-heading">
+        <p class="section-label">HOW TO APPLY</p>
+
+        <h2>Admission Process</h2>
+      </div>
+
+      <div class="admission-steps">
+        <div class="admission-card">
+          <div class="step-number">01</div>
+
+          <h3>Get Admission Information</h3>
+
+          <p>
+            Obtain the latest admission information and instructions from the
+            school.
+          </p>
+        </div>
+
+        <div class="admission-card">
+          <div class="step-number">02</div>
+
+          <h3>Prepare Documents</h3>
+
+          <p>Prepare all required academic and identification documents.</p>
+        </div>
+
+        <div class="admission-card">
+          <div class="step-number">03</div>
+
+          <h3>Submit Application</h3>
+
+          <p>
+            Submit the completed admission documents according to the school's
+            instructions.
+          </p>
+        </div>
+
+        <div class="admission-card">
+          <div class="step-number">04</div>
+
+          <h3>Admission Confirmation</h3>
+
+          <p>
+            Successful applicants receive information about their admission and
+            joining instructions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REQUIREMENTS -->
+
+    <section class="requirements-section">
+      <div class="section-heading">
+        <p class="section-label">WHAT YOU NEED</p>
+
+        <h2>Admission Requirements</h2>
+      </div>
+
+      <div class="requirements-container">
+        <div class="requirements-list">
+          <h3>Required Documents</h3>
+
+          <ul>
+            <li>Academic certificates or examination results</li>
+
+            <li>Birth certificate or relevant identification</li>
+
+            <li>Passport-size photographs</li>
+
+            <li>School transfer documents where applicable</li>
+
+            <li>Other documents requested by the school</li>
+          </ul>
+        </div>
+
+        <div class="requirements-list">
+          <h3>Important Information</h3>
+
+          <ul>
+            <li>Applicants should provide accurate information.</li>
+
+            <li>Admission is subject to the school's requirements.</li>
+
+            <li>
+              Parents or guardians should follow the official admission
+              instructions.
+            </li>
+
+            <li>
+              Admission requirements may change depending on the academic year.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+
+    <!-- =========================
+     ONLINE ADMISSION FORM
+========================= -->
+
+    <section class="online-admission">
+      <div class="section-heading">
+        <p class="section-label">ONLINE APPLICATION</p>
+
+        <h2>Apply for Admission</h2>
+
+        <p>
+          Please complete the form below with accurate information to submit an
+          admission application.
+        </p>
+      </div>
+
+      <div class="admission-form-container">
+        <form id="admissionForm">
+          <!-- STUDENT INFORMATION -->
+
+          <div class="form-section">
+            <h3>Student Information</h3>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="studentName"> Full Name </label>
+
+                <input
+                  type="text"
+                  id="studentName"
+                  name="studentName"
+                  placeholder="Enter student's full name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="dob"> Date of Birth </label>
+
+                <input type="date" id="dob" name="dob" required />
+              </div>
+
+              <div class="form-group">
+                <label for="gender"> Gender </label>
+
+                <select id="gender" name="gender" required>
+                  <option value="">Select Gender</option>
+
+                  <option value="Male">Male</option>
+
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="classApplying"> Class Applying For </label>
+
+                <select id="classApplying" name="classApplying" required>
+                  <option value="">Select Class</option>
+
+                  <option value="Form One">Form One</option>
+
+                  <option value="Form Two">Form Two</option>
+
+                  <option value="Form Three">Form Three</option>
+
+                  <option value="Form Four">Form Four</option>
+
+                  <option value="Form Five">Form Five</option>
+
+                  <option value="Form Six">Form Six</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- PARENT / GUARDIAN -->
+
+          <div class="form-section">
+            <h3>Parent / Guardian Information</h3>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="guardianName"> Parent / Guardian Name </label>
+
+                <input
+                  type="text"
+                  id="guardianName"
+                  name="guardianName"
+                  placeholder="Enter parent or guardian name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="guardianPhone"> Phone Number </label>
+
+                <input
+                  type="tel"
+                  id="guardianPhone"
+                  name="guardianPhone"
+                  placeholder="+255 XXX XXX XXX"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="guardianEmail"> Email Address </label>
+
+                <input
+                  type="email"
+                  id="guardianEmail"
+                  name="guardianEmail"
+                  placeholder="example@email.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="relationship"> Relationship to Student </label>
+
+                <select id="relationship" name="relationship" required>
+                  <option value="">Select Relationship</option>
+
+                  <option value="Father">Father</option>
+
+                  <option value="Mother">Mother</option>
+
+                  <option value="Guardian">Guardian</option>
+
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- PREVIOUS SCHOOL -->
+
+          <div class="form-section">
+            <h3>Previous School Information</h3>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="previousSchool"> Previous School </label>
+
+                <input
+                  type="text"
+                  id="previousSchool"
+                  name="previousSchool"
+                  placeholder="Enter previous school"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="yearCompleted"> Year Completed </label>
+
+                <input
+                  type="number"
+                  id="yearCompleted"
+                  name="yearCompleted"
+                  placeholder="e.g. 2026"
+                  min="2000"
+                  max="2100"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- ADDRESS -->
+
+          <div class="form-section">
+            <h3>Address Information</h3>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="region"> Region </label>
+
+                <input
+                  type="text"
+                  id="region"
+                  name="region"
+                  placeholder="Enter region"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="district"> District </label>
+
+                <input
+                  type="text"
+                  id="district"
+                  name="district"
+                  placeholder="Enter district"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- ADDITIONAL INFORMATION -->
+
+          <div class="form-section">
+            <h3>Additional Information</h3>
+
+            <div class="form-group">
+              <label for="message"> Additional Message </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Enter any additional information..."
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- AGREEMENT -->
+
+          <div class="agreement">
+            <label>
+              <input type="checkbox" id="agreement" required />
+
+              I confirm that the information provided above is accurate and
+              complete.
+            </label>
+          </div>
+
+          <!-- SUBMIT -->
+
+          <div class="form-submit">
+            <button type="submit" class="btn primary-btn">
+              Submit Application
+            </button>
+          </div>
+
+          <!-- SUCCESS MESSAGE -->
+
+          <div id="admissionSuccess" class="success-message">
+            Your admission application has been submitted successfully.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h3>Iyunga Secondary School</h3>
+
+          <p>Building Knowledge, Character and a Better Future.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+
+          <a href="index.html"> Home </a>
+
+          <a href="about.html"> About Us </a>
+
+          <a href="academics.html"> Academics </a>
+
+          <a href="admission.html"> Admission </a>
+
+          <a href="contact.html"> Contact </a>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+
+          <p><i class="bi bi-geo-alt"></i> Mbeya, Tanzania</p>
+          <p><i class="bi bi-telephone"></i> +255 615 917 578</p>
+          <p><i class="bi bi-envelope"></i> info@iyungasecondary.ac.tz</p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2026 Iyunga Secondary School. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
