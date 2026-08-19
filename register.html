@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Online Registration | Iyunga Secondary School</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================================
+         HEADER
+    ================================= -->
+
+    <header class="register-header">
+      <div class="register-header-container">
+        <a href="index.html" class="register-logo">
+          <span class="register-logo-icon">I</span>
+
+          <span>
+            <strong>IYUNGA</strong>
+            <small>SECONDARY SCHOOL</small>
+          </span>
+        </a>
+
+        <a href="index.html" class="back-home">
+          <i class="bi bi-arrow-left"></i>
+          Back to Home
+        </a>
+      </div>
+    </header>
+
+    <!-- ================================
+         PAGE INTRO
+    ================================= -->
+
+    <section class="register-intro">
+      <div>
+        <span class="register-badge"> ONLINE REGISTRATION </span>
+
+        <h1>Student Registration Form</h1>
+
+        <p>
+          Fill in the form below carefully to submit your application to Iyunga
+          Secondary School.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================================
+         REGISTRATION FORM
+    ================================= -->
+
+    <main class="registration-wrapper">
+      <form id="registrationForm" novalidate>
+        <!-- =================================
+                 SECTION 1: STUDENT INFORMATION
+            ================================== -->
+
+        <div class="form-card">
+          <div class="form-section-title">
+            <div class="form-section-icon">
+              <i class="bi bi-person"></i>
+            </div>
+
+            <div>
+              <h2>Student Information</h2>
+              <p>Enter the student's personal information.</p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <!-- FULL NAME -->
+
+            <div class="form-field full-width">
+              <label for="studentName"> Full Name <span>*</span> </label>
+
+              <input
+                type="text"
+                id="studentName"
+                name="studentName"
+                placeholder="Enter student's full name"
+                required
+              />
+
+              <small class="field-error" id="studentNameError"></small>
+            </div>
+
+            <!-- GENDER -->
+
+            <div class="form-field">
+              <label for="gender"> Gender <span>*</span> </label>
+
+              <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+
+                <option value="Male">Male</option>
+
+                <option value="Female">Female</option>
+              </select>
+
+              <small class="field-error" id="genderError"></small>
+            </div>
+
+            <!-- DATE OF BIRTH -->
+
+            <div class="form-field">
+              <label for="dateOfBirth"> Date of Birth <span>*</span> </label>
+
+              <input type="date" id="dateOfBirth" name="dateOfBirth" required />
+
+              <small class="field-error" id="dateOfBirthError"></small>
+            </div>
+
+            <!-- NATIONALITY -->
+
+            <div class="form-field">
+              <label for="nationality"> Nationality <span>*</span> </label>
+
+              <input
+                type="text"
+                id="nationality"
+                name="nationality"
+                placeholder="e.g. Tanzanian"
+                required
+              />
+
+              <small class="field-error" id="nationalityError"></small>
+            </div>
+
+            <!-- FORM -->
+
+            <div class="form-field">
+              <label for="applyingClass">
+                Form Applying For <span>*</span>
+              </label>
+
+              <select id="applyingClass" name="applyingClass" required>
+                <option value="">Select Form</option>
+
+                <option value="Form I">Form I</option>
+
+                <option value="Form II">Form II</option>
+
+                <option value="Form III">Form III</option>
+
+                <option value="Form IV">Form IV</option>
+
+                <option value="Form V">Form V</option>
+
+                <option value="Form VI">Form VI</option>
+              </select>
+
+              <small class="field-error" id="applyingClassError"></small>
+            </div>
+
+            <!-- PREVIOUS SCHOOL -->
+
+            <div class="form-field full-width">
+              <label for="previousSchool"> Previous School </label>
+
+              <input
+                type="text"
+                id="previousSchool"
+                name="previousSchool"
+                placeholder="Enter previous school name"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- =================================
+                 SECTION 2: PARENT INFORMATION
+            ================================== -->
+
+        <div class="form-card">
+          <div class="form-section-title">
+            <div class="form-section-icon">
+              <i class="bi bi-people"></i>
+            </div>
+
+            <div>
+              <h2>Parent / Guardian Information</h2>
+              <p>Provide valid parent or guardian details.</p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <!-- PARENT NAME -->
+
+            <div class="form-field full-width">
+              <label for="parentName">
+                Parent / Guardian Full Name <span>*</span>
+              </label>
+
+              <input
+                type="text"
+                id="parentName"
+                name="parentName"
+                placeholder="Enter parent or guardian name"
+                required
+              />
+
+              <small class="field-error" id="parentNameError"></small>
+            </div>
+
+            <!-- RELATIONSHIP -->
+
+            <div class="form-field">
+              <label for="relationship"> Relationship <span>*</span> </label>
+
+              <select id="relationship" name="relationship" required>
+                <option value="">Select relationship</option>
+
+                <option value="Father">Father</option>
+
+                <option value="Mother">Mother</option>
+
+                <option value="Guardian">Guardian</option>
+
+                <option value="Other">Other</option>
+              </select>
+
+              <small class="field-error" id="relationshipError"></small>
+            </div>
+
+            <!-- PHONE -->
+
+            <div class="form-field">
+              <label for="phone"> Phone Number <span>*</span> </label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="e.g. 0712345678"
+                required
+              />
+
+              <small class="field-error" id="phoneError"></small>
+            </div>
+
+            <!-- EMAIL -->
+
+            <div class="form-field full-width">
+              <label for="email"> Email Address </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+              />
+
+              <small class="field-error" id="emailError"></small>
+            </div>
+
+            <!-- ADDRESS -->
+
+            <div class="form-field full-width">
+              <label for="address"> Residential Address <span>*</span> </label>
+
+              <textarea
+                id="address"
+                name="address"
+                rows="3"
+                placeholder="Enter residential address"
+                required
+              ></textarea>
+
+              <small class="field-error" id="addressError"></small>
+            </div>
+          </div>
+        </div>
+
+        <!-- =================================
+                 SECTION 3: ACADEMIC INFORMATION
+            ================================== -->
+
+        <div class="form-card">
+          <div class="form-section-title">
+            <div class="form-section-icon">
+              <i class="bi bi-mortarboard"></i>
+            </div>
+
+            <div>
+              <h2>Academic Information</h2>
+              <p>Provide the student's academic details.</p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <!-- EXAMINATION NUMBER -->
+
+            <div class="form-field">
+              <label for="examNumber"> Examination Number </label>
+
+              <input
+                type="text"
+                id="examNumber"
+                name="examNumber"
+                placeholder="Enter examination number"
+              />
+            </div>
+
+            <!-- LAST CLASS -->
+
+            <div class="form-field">
+              <label for="lastClass"> Last Class Completed </label>
+
+              <input
+                type="text"
+                id="lastClass"
+                name="lastClass"
+                placeholder="e.g. Standard VII"
+              />
+            </div>
+
+            <!-- ACADEMIC YEAR -->
+
+            <div class="form-field">
+              <label for="academicYear"> Academic Year <span>*</span> </label>
+
+              <select id="academicYear" name="academicYear" required>
+                <option value="">Select year</option>
+
+                <option value="2026">2026</option>
+
+                <option value="2027">2027</option>
+
+                <option value="2028">2028</option>
+              </select>
+
+              <small class="field-error" id="academicYearError"></small>
+            </div>
+          </div>
+        </div>
+
+        <!-- =================================
+                 SECTION 4: ADDITIONAL INFORMATION
+            ================================== -->
+
+        <div class="form-card">
+          <div class="form-section-title">
+            <div class="form-section-icon">
+              <i class="bi bi-chat-left-text"></i>
+            </div>
+
+            <div>
+              <h2>Additional Information</h2>
+              <p>Provide any other relevant information.</p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="additionalInfo"> Additional Information </label>
+
+            <textarea
+              id="additionalInfo"
+              name="additionalInfo"
+              rows="5"
+              placeholder="Write any additional information here..."
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- =================================
+                 DECLARATION
+            ================================== -->
+
+        <div class="form-card declaration-card">
+          <div class="declaration-title">
+            <i class="bi bi-shield-check"></i>
+
+            <h2>Declaration</h2>
+          </div>
+
+          <label class="declaration-check">
+            <input type="checkbox" id="declaration" required />
+
+            <span>
+              I declare that the information provided in this application form
+              is true and correct to the best of my knowledge.
+            </span>
+          </label>
+
+          <small class="field-error" id="declarationError"></small>
+        </div>
+
+        <!-- =================================
+                 FORM ACTIONS
+            ================================== -->
+
+        <div class="registration-actions">
+          <button type="reset" class="clear-button" id="clearForm">
+            <i class="bi bi-arrow-counterclockwise"></i>
+            Clear Form
+          </button>
+
+          <button type="submit" class="submit-registration">
+            Submit Application
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- SUCCESS MESSAGE -->
+
+        <div id="registrationSuccess" class="registration-success">
+          <div class="success-icon">
+            <i class="bi bi-check-lg"></i>
+          </div>
+
+          <div>
+            <h3>Application Submitted Successfully!</h3>
+
+            <p>Your registration form has been submitted successfully.</p>
+
+            <strong id="applicationNumber"></strong>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="register-footer">
+      <p>© 2026 Iyunga Secondary School. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
